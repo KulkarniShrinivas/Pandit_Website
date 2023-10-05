@@ -1,0 +1,134 @@
+.about-us-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .about-us-container {
+    z-index: 10;
+    max-width: 1000px;
+    background-color: white;
+    padding: 0 1rem;
+    .text {
+      color: var(--primary-color);
+      font-weight: 500;
+
+      strong {
+        color: var(--primary-color-dark);
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    .languages {
+      .language-heading {
+        text-align: center;
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        span {
+          color: var(--secondary-color);
+        }
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        .tilt {
+          background-color: var(--primary-color);
+          width: 150px;
+          height: 2rem;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          h4 {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+
+    .about-us-left,
+    .about-us-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        box-shadow: 0 0 10px var(--primary-color-extraLight);
+        background-color: var(--primary-color);
+        border-radius: 5px;
+
+        color: white;
+        padding: 5px;
+
+        img {
+          border-radius: 5px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .about-us-content {
+    .about-us-container {
+      .languages {
+        .language-heading {
+          font-size: 1.4rem;
+        }
+
+        .container {
+          gap: 1rem;
+
+          .tilt {
+            width: 160px;
+            h4 {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .about-us-content {
+    .about-us-container {
+      .languages {
+        .language-heading {
+          font-size: 1.75rem;
+        }
+      }
+      border-radius: 10px;
+      .about-us-left,
+      .about-us-right {
+        margin: 2rem 0;
+        gap: 2rem;
+      }
+
+      .about-us-left {
+        flex-direction: row;
+      }
+
+      .about-us-right {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

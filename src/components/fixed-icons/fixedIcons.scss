@@ -1,0 +1,9 @@
+.fixed-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 10000000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

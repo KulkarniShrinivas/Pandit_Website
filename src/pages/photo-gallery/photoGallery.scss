@@ -1,0 +1,25 @@
+.Photo-Gallery {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  .heading {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 900;
+
+    span {
+      color: var(--secondary-color);
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

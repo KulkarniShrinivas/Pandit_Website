@@ -1,0 +1,72 @@
+.tilt-card {
+  color: var(--primary-color);
+  margin: 0;
+
+  text-align: center;
+  background-color: white;
+  border: 1px solid var(--primary-color-extraLight);
+  border-radius: 5px;
+  box-shadow: 0px 4px 30px var(--primary-color-light);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15)
+      );
+      mix-blend-mode: multiply;
+      z-index: 1;
+    }
+  }
+
+  .card-tilt-heading {
+    position: absolute;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 1rem;
+    z-index: 2;
+
+    padding: 5px;
+    border-radius: 3px;
+
+    .card-tilt-tag {
+      color: white;
+      text-shadow: 0 0 5px var(--primary-color-light);
+    }
+  }
+  transition: all 1s;
+}
+
+@media (min-width: 800px) {
+  .tilt-card {
+    width: 280px;
+    height: 280px;
+
+    .card-tilt-heading {
+      .card-tilt-tag {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.carousel-root {
+  margin: 0 10px;
+
+  .carousel-img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .thumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    .carousel-img {
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .carousel-root {
+    .thumbs {
+      visibility: visible;
+      width: initial;
+      height: initial;
+    }
+  }
+}

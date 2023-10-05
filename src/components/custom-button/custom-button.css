@@ -1,0 +1,80 @@
+.contained {
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: #fff;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.contained::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: var(--primary-color);
+  opacity: 1;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.contained:hover {
+  color: var(--primary-color);
+}
+
+.contained:hover::before {
+  left: 0;
+  right: 100%;
+  opacity: 0;
+}
+
+.outlined {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  border: 2px solid var(--primary-color);
+}
+
+.outlined .btn-span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.outlined::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: var(--primary-color);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.outlined:hover {
+  color: #fff;
+}
+
+.outlined:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}

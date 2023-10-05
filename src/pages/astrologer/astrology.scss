@@ -1,0 +1,77 @@
+.astrology-container {
+  background-color: white;
+  padding-top: 70px;
+  text-align: center;
+  color: var(--primary-color);
+
+  .heading {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-bottom: 20px;
+    span {
+      color: var(--secondary-color);
+    }
+  }
+
+  .astro-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .subhead {
+      .h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .astro-about {
+      max-width: 1000px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .owner-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        h3 {
+          font-size: 2rem;
+        }
+
+        h4 {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .astrology-para {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      p {
+        line-height: 1.6;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .astrology-container {
+    .astro-container {
+      .subhead {
+        .h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .astro-about {
+        flex-direction: row;
+      }
+    }
+  }
+}
